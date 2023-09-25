@@ -10,6 +10,12 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Space+Mono&display=swap');
+  </style>
+  <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
@@ -17,21 +23,21 @@
 <body>
 
   <!-- Sign-up form start -->
-  <div class="outer-ctn"> 
+  <div class = "outer-ctn"> 
     <div class="lft-inner-ctn"> 
       <h1>Stay updated!</h1>
 
       <p>Join 60,000+ product managers receiving monthly updates on:</p>
       <ul>  
-      <li>Product discovery and building what matters</li>
-      <li>Measuring to ensure updates are a success</li>
-      <li>And much more!</li>
+      <li><span><img src="/assets/images/icon-list.svg"></span> Product discovery and building what matters</li>
+      <li><span><img src="/assets/images/icon-list.svg"></span> Measuring to ensure updates are a success</li>
+      <li><span><img src="/assets/images/icon-list.svg"></span> And much more!</li>
       </ul>
       <form>
-       <input type="email"> Email address
-      email@company.com
+        <label for="email">Email address: </label>
+        <input type="email" value="email@company.com" name="email">
       
-      Subscribe to monthly newsletter
+      <button>Subscribe to monthly newsletter</button>
       </form>
     </div>
     <div id="form-img"><img src="./assets/images/illustration-sign-up-desktop.svg"></div>
