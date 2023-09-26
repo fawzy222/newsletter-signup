@@ -64,7 +64,7 @@ button{
     height: 300px;
     margin: auto;
     padding: 25px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -82,4 +82,35 @@ button{
 }
  .success-ctn #success-btn{
     padding: 10px;
+}
+
+
+@media only screen and (max-width:600px) {
+    body{
+        height: fit-content;
+        width: 1000px;
+        margin: auto;
+    }
+    .outer-ctn{
+        flex-direction: column-reverse;
+        width: 380px;
+        height: fit-content;
+        padding: 0px;
+    }
+    #form-img img{
+       width: 380px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }   
+    .lft-inner-ctn{
+        width: fit-content;
+        padding: 20px;
+    }
+    .success-ctn{
+        height: 900px;
+    }
+    .success-ctn #success-btn {
+        margin-top: 150px;
+    }
 }
