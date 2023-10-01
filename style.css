@@ -78,10 +78,11 @@ button{
     position:relative;
     display: block;
     top: 0px;
-    right: 180px;
+    
 }
  .success-ctn #success-btn{
     padding: 10px;
+    margin: auto;
 }
 
 

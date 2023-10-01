@@ -8,7 +8,7 @@
   <link rel=" stylesheet" href="./style.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
   </style>
@@ -33,9 +33,9 @@
       <li><span><img src="/assets/images/icon-list.svg"></span> Measuring to ensure updates are a success</li>
       <li><span><img src="/assets/images/icon-list.svg"></span> And much more!</li>
       </ul>
-      <form>
+      <form id="emailForm">
         <label for="email">Email address: </label>
-        <input type="email" value="email@company.com" name="email">
+        <input type="email" value="email@company.com" name="email" id="email"required>
       
       <button type="submit">Subscribe to monthly newsletter</button>
       </form>
@@ -49,7 +49,7 @@
   <span><img src="/assets/images/icon-list.svg"></span>
   <h1>Thanks for subscribing!</h1>
 
- <p> A confirmation email has been sent to ash@loremcompany.com. 
+ <p id="success-message"> A confirmation email has been sent to ash@loremcompany.com. 
   Please open it and click the button inside to confirm your subscription.</p>
 
   <button id="success-btn" type="button">Dismiss message</button>
@@ -61,4 +61,5 @@
     Coded by <a href="#">Fawzy A.</a>.
   </div>
 </body>
+<script src="./script.js"></script>
 </html>
